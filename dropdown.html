@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .navbar{
+            background-color: grey;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+
+        }
+        .navbar ul li {
+            padding: 10px 30px;
+            position: relative;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+
+        }
+        .navbar ul li a:hover{
+            color: red;
+
+        }
+        .Dropdown{
+            display: none;
+        }
+        .navbar ul li:hover .Dropdown{
+            display: block;
+            position: absolute;
+            left: 0%;
+            top: 100%;
+            background-color: grey;
+        }
+        .navbar ul li:hover .Dropdown ul{
+            display: block;
+            margin: 10px;
+        }
+
+        .navbar ul li:hover .Dropdown ul li{
+            width: 150px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a>
+                <div class="Dropdown">
+                    <ul>
+                        <li><a href="">hi</a></li>
+                        <li><a href="">hello</a></li>
+                        <li><a href="">world</a></li>
+                    </ul>
+                </div>
+            
+            
+            </li>
+            <li><a href="">contact</a></li>
+            <li><a href="">FQS</a></li>
+        </ul>
+    </div>
+</body>
+</html>
