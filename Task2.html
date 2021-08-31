@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    
+    <style>
+        .navbar{
+            width: 100%;
+            background-color: #007cc7;
+        }
+        .navbar ul{
+            padding: 10px;
+            display: flex;
+        }
+        .navbar ul li{
+            list-style: none;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            margin: 10px;
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+            font-family: 'Indie Flower', cursive;
+            color: white;
+        }
+        .navbar ul li a:hover{
+            background-color: #4dabda;
+            border-radius: 10px;
+        }
+        .fa{
+            margin: 10px;
+            padding-left: 10px;
+        }
+        .drop{
+            display: none;
+        }
+        .navbar ul li:hover .drop{
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 100%;
+            background-color: #007cc7;
+            color: white;
+            z-index: 1;
+        }
+        .navbar ul li:hover .drop ul{
+            display: block;
+            margin: 10px;
+        }
+        .navbar ul li:hover .drop ul li{
+            padding: 10px;
+        }
+        .navbar ul li:hover .drop ul li a{
+            padding: 10px;
+            width: 150px;
+        }
+        .img {
+           background: url(IMG/book-library-with-open-textbook.jpg);
+           width: 100%;
+           height: 350px;
+           background-position:center;
+           background-size: cover;
+           padding: 0px;
+           margin-top: 0px;
+        }
+        .img h1{
+            font-family: 'Architects Daughter', cursive;
+            color: #e60000;
+            text-align: center;
+            transform: translateY(350%);
+        }
+        .gallery1, .gallery2, .gallery3{
+            float: left;
+            margin: 10px;
+
+        }
+        .gallery1{
+            position: relative;
+        }
+        .gallery2{
+            position: relative;
+        }
+        .gallery3{
+            position: relative;
+        }
+        .text1{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .text2{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .text3{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .footer{
+            background-color: #007cc7;
+            position: absolute;
+            top: 780px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href=""><i class="fa fa-address-card" aria-hidden="true"></i>About</a></li>
+            <li><a href=""><i class="fa fa-sliders" aria-hidden="true"></i>Services</a>
+            <div class="drop">
+                <ul>
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 2</a></li>
+                    <li><a href="">Service 3</a></li>
+                    <li><a href="">Service 4</a></li>
+                </ul>
+            </div>
+            </li>
+            <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+        </ul>
+    </div>
+    <div class="img">
+        <h1>Hello World</h1>
+    </div>
+    <div class="gallery1">
+        <img src="IMG/1 (1).jpg" alt=""  height="300px">
+        <div class="text1">
+            <h1>Text 1.....</h1>
+        </div>
+    </div>
+    <div class="gallery2">
+        <img src="IMG/1 (4).jpg" alt=""  height="300px">
+        <div class="text2">
+            <h1>Text 2.....</h1>
+        </div>
+    </div>
+    <div class="gallery3">
+        <img src="IMG/1 (7).jpg" alt=""  height="300px">
+        <div class="text3">
+            <h1>Text 3.....</h1>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dicta. Laudantium, sapiente officia soluta alias dolorem eos, aperiam assumenda doloribus tempora labore, natus enim illo quod cupiditate. Autem, libero molestias?</p>
+    </div>
+</body>
+</html>
